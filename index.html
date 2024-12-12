@@ -14,9 +14,9 @@
                 <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
  </head>
    <body>
-   
-   <!--   -->
-  <h1>projects\</h1>
+    
+   <h1>projects\</h1>
+  
        <div class="cards">
         <a href="https://hubilya.github.io/NCrypted/">
                 <div class="card">
@@ -101,8 +101,9 @@ body {
   user-select: none;
 }
 
+
 h1 { 
-	padding-top:1em;
+  padding-top:1em;
 font-size:25px;
 color:#f403e0;
 padding-right:50%;
@@ -110,6 +111,7 @@ outline:none;
 animation: animate 8s linear infinite;
  position:relative; 
 font-family:Tilt Neon;
+
 
 }
 @keyframes animate{
@@ -126,7 +128,6 @@ font-family:Tilt Neon;
     0 0 160px #f403e0;
   }
 } 
-
 .cards {
   
   display: grid;
@@ -148,8 +149,8 @@ a{
 .cards:hover .card {
   background: radial-gradient(
     700px circle at var(--xPos) var(--yPos),
-    rgb(2, 202, 209),
-    transparent 20%
+    rgb(209, 2, 181),
+    transparent 15%
   );
 }
 
@@ -164,7 +165,7 @@ a{
     rgba(9, 128, 158, 0)
     transparent 0%
   );
-  border-radius: 18px;
+  border-radius: 8px;
   transition: 0.15s;
 }
 
@@ -172,7 +173,7 @@ a{
   opacity: 0;
 }
 
-.card::before {
+/* .card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -187,7 +188,7 @@ a{
   );
   opacity: 0;
   transition: all 0.15s ease-in-out;
-}
+} */
 
 .card-content {
   display: flex;
@@ -225,19 +226,20 @@ a{
 
 @media screen and (max-width:800px) 
 {
-
+ 
   .cards{
   display: grid;
   grid-template-columns: repeat(2, 130px);
   grid-template-rows: repeat(4, 130px);
   
   }
-	.card :is(i, h2) {
+  .card :is(i, h2) {
   opacity: 0.5;
   transition: 0.5s;
 
 }
 }
+
      </style>
     
    <script 
