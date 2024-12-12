@@ -16,7 +16,7 @@
    <body>
    
    <!--   -->
-  
+  <h1>try it</h1>
        <div class="cards">
         <a href="https://hubilya.github.io/NCrypted/">
                 <div class="card">
@@ -101,7 +101,30 @@ body {
   user-select: none;
 }
 
+h1 { 
+font-size:25px;
+color:#f403e0;
+padding-right:50%;
+outline:none;
+animation: animate 8s linear infinite;
+ position:relative; 
+font-family:Tilt Neon;
 
+}
+@keyframes animate{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    color:#3b3f41;
+    text-shadow:none;
+  }
+  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+    color:#fff;
+    text-shadow: 0 0 10px #f403e0,
+    0 0 20px #f403e0,
+    0 0 30px #f403e0,
+    0 0 80px #f403e0,
+    0 0 160px #f403e0;
+  }
+} 
 
 .cards {
   
@@ -201,19 +224,18 @@ a{
 
 @media screen and (max-width:800px) 
 {
-  .base img{
-width:180%;
 
-}
-.vstup{
-  padding-bottom:50%;
-}
   .cards{
   display: grid;
-  grid-template-columns: repeat(2, 170px);
-  grid-template-rows: repeat(4, 150px);
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: repeat(4, 130px);
   
   }
+	.card :is(i, h2) {
+  opacity: 0.5;
+  transition: 0.5s;
+
+}
 }
      </style>
     
